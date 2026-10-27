@@ -211,7 +211,7 @@ def detail_block(rows, t):
 def guardrails(t):
     g = []
     if t["contract"] < ENGAGEMENT_MIN:
-        g.append(f"  ! Under the ${ENGAGEMENT_MIN:,}/mo engagement minimum. Re-scope or pass.")
+        g.append(f"  ! Under the ${ENGAGEMENT_MIN:,}/mo engagement minimum. Re-scope, or offer projects and Website Care.")
     if t["contract"] < t["floor"]:
         g.append("  ! Contract price is UNDER the 50% floor. Owner sign-off required.")
     return g

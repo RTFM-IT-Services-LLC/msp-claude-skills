@@ -107,7 +107,7 @@ Suspected compromise (ransomware, account takeover, data exposure) is its own tr
 2. **Kill the identity, not just the account.** For account takeover: disable the account AND
    revoke active sessions and tokens, reset MFA methods, remove attacker-added inbox rules and
    forwarding, and review OAuth application grants. A disabled account with live tokens is
-   still compromised.
+   still compromised. For a compromised mailbox, run the Compromised Mailbox Checklist below.
 3. **Escalate to the owner immediately**, regardless of hour.
 4. **Counsel early for anything significant.** For incidents with plausible data exposure,
    regulated data, or serious client impact, engage an attorney licensed in {{STATE}}
@@ -142,6 +142,44 @@ affected until shown otherwise, and get the attorney engaged in the first hour. 
 documentation matters most here. The RMM disable procedure, {{COMPANY_NAME}} access rules, and
 the tabletop exercise for this scenario live in msp-security's house standard
 (`references/msp-house-security.md` in that skill).
+
+### Compromised Mailbox Checklist
+
+Use this checklist when a mailbox on the client's email and productivity platform is
+compromised. It expands step 2 above. Steps 3 through 9 of the Security Incidents track still
+apply. The order follows the major email platform vendors' published compromised-account
+guidance for administrators.
+
+Work from a known-clean device. Contact the client by phone, not through the affected mailbox.
+
+1. Disable or suspend the account.
+2. Revoke all active sessions and refresh tokens.
+3. If malware is possible on the user's computer, isolate that computer.
+4. Scan the isolated computer before the user signs in on it again.
+5. Reset the password to a new password that the user does not use anywhere else.
+6. Give the new password to the user by phone or through the vault. Never send it by email.
+7. Delete the user's app passwords. A password reset does not revoke them.
+8. List all inbox rules, including hidden rules. Some platforms do not show every rule in the
+   mail client.
+9. Remove each inbox rule and forwarding address that the user cannot explain.
+10. Revoke each OAuth application grant that the client did not approve.
+11. Remove each mailbox delegate and each full mailbox access, send-as, or send-on-behalf
+    permission that nobody can explain.
+12. Remove each MFA method, recovery phone number, and recovery email address that the user
+    does not recognize.
+13. Remove any admin role that the account should not hold.
+14. Search the sign-in logs, audit logs, and message trace from a date before the first known
+    sign of compromise.
+15. Check the Sent, Deleted, Drafts, and Archive folders for messages the user did not write.
+16. If the account sent fraudulent messages, give the client the list of recipients to call.
+17. If a message changed payment details, tell the client to call its bank at once.
+18. Keep the account. Do not delete it, because it holds the evidence.
+19. Confirm that MFA is enforced on the account.
+20. Re-enable the account and return it to the user.
+21. Record each step, its time, and its result in the ticket.
+
+If you publish a client-facing version of this process (for example a resources article through
+msp-marketing), keep its steps in the same order as this checklist.
 
 ---
 

@@ -164,7 +164,10 @@ head-to-head pitch:
 
 **Qualify before you sell past this one:** engagements start at $1,000 a month, and under 10
 employees is a red light in the ICP (see ideal-customer-profile.md). If they can't clear the
-minimum or the size floor, refer them out gracefully instead of winning a bad-fit deal.
+minimum or the size floor, do not sell them managed IT. Offer what fits them instead: a
+project (the AI adoption project or a website) and Website Care. Website Care can stand alone
+below the minimum (msp-pricing). Do not refer them out while {{COMPANY_NAME}} has an offering
+that fits them.
 
 **Response:**
 > "You'd be surprised. Actually, small businesses are the most common targets for cyberattacks.

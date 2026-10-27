@@ -138,8 +138,8 @@ disagreements, and all five pricing notes are flipped.
 ## Phase 3: Setup Decisions sweep
 
 Go skill by skill in this order: msp-helpdesk, msp-maintenance, msp-security, msp-client-comms,
-msp-onboarding, msp-offboarding, msp-qbr, msp-metrics, msp-sales, msp-marketing, msp-leadgen,
-msp-ai-adoption, msp-website-setup, and last msp-legal (partially; see below).
+msp-onboarding, msp-offboarding, msp-qbr, msp-metrics, msp-sales, msp-marketing, msp-social,
+msp-leadgen, msp-ai-adoption, msp-website-setup, and last msp-legal (partially; see below).
 
 For each skill, work its Setup Decisions one at a time: state the question, show the shipped
 example default, take the user's decision (sanity rule applies to any number), and write it into
@@ -158,17 +158,20 @@ For msp-security, settle Setup Decisions 1 through 7 here. Decision 8 (the state
 do not flip that reference file's note until it is filled in. If Decision 1 changes the EDR,
 SIEM, or MDR default, update msp-sales and msp-pricing to match in the same sitting.
 
-For msp-ai-adoption, settle Decisions 1, 2, and 5 here. Decisions 3 and 4 (the individual
+For msp-ai-adoption, settle Decisions 1, 2, 5, and 6 here. Decisions 3 and 4 (the individual
 engagement letter and the AI Use Policy template) are attorney items: leave them for Phase 4;
-the skill's note may be flipped once 1, 2, and 5 are settled.
+the skill's note may be flipped once 1, 2, 5, and 6 are settled. Write the Decision 6 public name into every client-facing place that names the AI project (msp-sales, msp-pricing, and the msp-marketing AI call to action).
 
-**Side-offering opt-out list.** If the user does not offer one of the side offerings (msp-sales
-Setup Decision "Side offerings"), remove it everywhere in the same sitting:
-- AI adoption: msp-sales (About This Business side offerings, section 10, the Side Offerings
-  table in `references/service-catalog.md`), msp-pricing ("Side Offering: AI Adoption" and its
-  pointer in `references/break-fix-rates.md`); keep msp-ai-adoption for internal use or delete
-  it.
-- Website builds and Website Care: msp-sales (core stack, side offerings, section 10,
+**Project-offering opt-out list.** If the user does not offer one of the project offerings
+(msp-sales Setup Decision "Project offerings"), remove it everywhere in the same sitting:
+- AI adoption: msp-sales (About This Business project offerings, section 10, the Project
+  Offerings table in `references/service-catalog.md`, the AI Adoption Project section in
+  `references/service-descriptions.md`), msp-pricing ("Project Offering: AI Adoption" and its
+  pointer in `references/break-fix-rates.md`), msp-marketing (the AI call to action in
+  `references/cta-library.md`, the AI basics workshop paragraph in
+  `references/channels-and-tactics.md`, and the exclusions rule mention), and msp-qbr (the AI
+  project progress line in the prep list); keep msp-ai-adoption for internal use or delete it.
+- Website builds and Website Care: msp-sales (core stack, project offerings, section 10,
   `references/service-catalog.md` rows, and the vendor wrangling line in
   `references/service-descriptions.md`; move website builds to the Deliberately NOT sold list),
   msp-pricing (the Website Care building block, the websites section, the break-fix-rates
@@ -180,6 +183,9 @@ Setup Decision "Side offerings"), remove it everywhere in the same sitting:
   msp-website-setup if the user still builds sites for their own use, but remove its Website
   Care and client-paper content (the Phase 0 table and bullets, and "Taking Over an Existing
   Site").
+- For either offering, also update the below-minimum wording so it offers only what the user
+  still sells: msp-sales `references/objection-handling.md` (Objection 4), the msp-pricing
+  engagement-minimum bullet, and the guardrail string in msp-pricing `scripts/price_quote.py`.
 
 Exit condition: every skill's decisions are settled or logged as deferrals, and every note
 except msp-legal's and msp-security's compliance-overlays note is flipped.
@@ -191,7 +197,7 @@ This one cannot be done inside the kit. The positions in msp-legal and the contr
 attorney licensed in their state before anything governs a real client relationship. Record in
 SETUP-STATE.md who they are sending it to and when. The same review fills in the state law section
 of `msp-security/references/compliance-overlays.md` (msp-security Setup Decision 8). If the user
-offers the side offerings, have the attorney also draft, in the same engagement, the website
+offers the project offerings, have the attorney also draft, in the same engagement, the website
 documents (msp-legal document-stack entry 13), the individual engagement letter, and the AI Use
 Policy template (msp-ai-adoption Decisions 3 and 4). When the user confirms the review is done, write in the attorney's answers, flip msp-legal's note and the
 compliance-overlays note, and mark the phase.

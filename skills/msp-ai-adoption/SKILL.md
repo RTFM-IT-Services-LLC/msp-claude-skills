@@ -4,7 +4,7 @@ description: >
   Use this skill when a client or prospect of your managed IT services (MSP) business asks a
   general AI question: "I want to use AI but don't know where to start", "how can we use AI",
   "should we be using ChatGPT", "we bought Copilot and nobody uses it", "is Gemini any good",
-  or "can AI help my team". Runs a structured discovery (tools, work, data, comfort), picks
+  or "can AI help my team". Delivers the AI adoption project. Runs a structured discovery (tools, work, data, comfort), picks
   three starter use cases, and produces platform-specific workflow cards, prompt templates,
   and a 30-day adoption plan for Copilot, Gemini, ChatGPT, or Claude. Also for preparing a
   client AI call, turning call notes into a plan, or leveling up a team already using AI.
@@ -39,7 +39,7 @@ productivity" overview.
   BAA, and professional-rules questions (for law firms, ABA Formal Opinion 512 territory; the
   firm's own counsel decides ethics questions, not {{COMPANY_NAME}}).
 - **msp-pricing** owns any number: license costs quoted to the client, and the price of
-  this engagement (its "Side Offering: AI Adoption" section). This skill never states a
+  this engagement (its "Project Offering: AI Adoption" section). This skill never states a
   price.
 - **msp-legal** also owns the paper that must be signed before a paid project starts
   (SOW, MSA plus SOW, or the individual engagement letter; see Inherited Defaults).
@@ -182,6 +182,18 @@ Produce these, in this order. Load msp-brand before formatting anything the clie
 5. **Next-wave list and sales notes** (internal only): licensing gaps, tenant cleanup, security
    gaps, bigger opportunities.
 
+**Public names for the deliverables.** Client-facing pages use these public names. Match them
+to your public AI page (Setup Decision 6). Internal notes may use either name.
+
+| Public name (client-facing) | Internal name |
+|---|---|
+| Your AI starter plan | AI Starter Plan |
+| Three step-by-step guides | Workflow Cards |
+| A prompt starter sheet | Prompt Starter Sheet |
+| Clear rules for your data | Red list, plus the AI Use Policy recommendation |
+| A walkthrough with your team | Remote walkthrough session |
+| A 30-day check-in | 30-day check-in |
+
 **The prompt pattern to teach every client** (simple enough to remember):
 
 - **Role:** who the AI should act as ("You are an office manager at a 30-person CPA firm").
@@ -203,7 +215,9 @@ you leave out?" as normal next steps.
   Gems, or agents where the plan supports it).
 - **Week 4:** check-in with {{COMPANY_NAME}}. Measure against what we heard in discovery: hours
   saved, tasks now routine, problems. Decide the next wave. Existing managed clients roll this
-  into the next QBR.
+  into the next QBR. For a client who is not managed, this check-in is where {{COMPANY_NAME}}
+  makes the managed offer that fits them (msp-sales section 10). For a Lean sale,
+  {{COMPANY_NAME}} sends a short, free follow-up email at 30 days with that offer instead.
 
 Adoption fails from disuse, not from bad AI. One champion using it daily beats a company-wide
 announcement.
@@ -315,12 +329,17 @@ If a request is thin, ask no more than these before starting:
 
 ## Inherited Defaults (shipped example defaults)
 
-AI adoption ships as a side offering, not a core service. Numbers live in msp-pricing ("Side
-Offering: AI Adoption"); how and when to offer it lives in msp-sales (section 10). If you change
-one of these there, keep this skill consistent.
+Clients see this project under your public name for the AI project (Setup Decision 6), and
+it is marketed to any small business through your public AI page. It is a one-time project,
+and like every {{COMPANY_NAME}} offering it is a path to managed services. Numbers live in
+msp-pricing ("Project Offering: AI Adoption"). How and when to offer it, and when to raise
+managed services, live in msp-sales (section 10). If you change one of these there, keep this
+skill consistent.
 
 1. **Free vs billable.** The 30 to 45 minute AI conversation is free for managed clients and
-   for prospects in the ICP. For individuals and small clients outside the ICP, the advice is
+   for prospects in the ICP. Your website does not advertise it. Website leads get a short
+   scoping call first, and the free conversation only after that call confirms ICP fit. For
+   individuals and small clients outside the ICP, the advice is
    the paid project. The written pack (Starter Plan, three workflow cards, prompt starter sheet,
    red list, walkthrough, 30-day check-in) is a fixed-fee project for everyone, managed clients
    included, at their card rate. A Lean option (deliverables only, no walkthrough or check-in)
@@ -333,9 +352,10 @@ one of these there, keep this skill consistent.
 4. **Paper before work.** Managed clients: a short SOW under their MSA. Non-managed businesses:
    MSA plus SOW. Individuals: a one-page engagement letter (see Setup Decisions). No
    deliverables are built for a paid project until the paper is signed.
-5. **Workshops.** Group "AI for your team" sessions run only as free marketing workshops
-   (msp-marketing). There is no paid workshop product; a client who wants their team trained
-   gets extra walkthrough hours on their own project.
+5. **Workshops.** Group sessions run only as the free "AI basics workshop" (example name;
+   msp-marketing). Your public name for the AI project always means the paid project, never
+   the workshop. There is no paid workshop product. A client who wants their team trained gets
+   extra walkthrough hours on their own project.
 6. **Reviews and referrals.** Never traded for a price change. The payoff comes from volume and
    a plain ask after delivery (msp-sales section 10).
 
@@ -345,9 +365,11 @@ Settle these before this skill goes live for your shop. Accept the shipped defau
 or log a deferral.
 
 1. **Whether you offer AI adoption at all, and to whom.** Shipped default: offered to managed
-   clients who ask and, as a volume play, to small clients and individuals outside the ICP. If
-   you do not offer it, keep this skill for internal use and remove the AI adoption parts of
-   the other skills (the side-offering opt-out list in msp-setup Phase 3).
+   clients who ask, to any small business that comes in through your public AI page, and, as
+   a volume play, to small clients and individuals outside the ICP. Every project client gets
+   a managed offer that fits them (msp-sales section 10). If you do not offer it, keep this
+   skill for internal use and remove the AI adoption parts of the other skills (the
+   project-offering opt-out list in msp-setup Phase 3).
 2. **Free conversation rule.** Shipped default: free for managed clients and ICP prospects,
    paid for everyone else (Inherited Default 1). Decide your own line.
 3. **Individual engagement letter.** Shipped as a requirement but not included in the kit.
@@ -359,3 +381,7 @@ or log a deferral.
    Data Rules above are the starting list.
 5. **Workshops.** Shipped default: free marketing workshops only, no paid workshop product.
    Decide whether you want a paid training product instead; if so, price it in msp-pricing.
+6. **Public name and page for the AI project.** Pick the name clients will see (example: a
+   short, plain name such as "AI Quick Start"), the public page on {{DOMAIN}}, and the
+   call-to-action link. Use the public name in all client-facing text and quotes; internal
+   notes may use either. Never give the free group workshop the same name.

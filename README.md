@@ -1,6 +1,6 @@
 # MSP Operations Kit
 
-A complete Claude skill suite for running a small managed IT services business (MSP). Eighteen skills that work as one system: every client-visible number comes from one pricing skill, every piece of content follows one brand skill, and every legal-adjacent workflow carries an attorney escalation path.
+A complete Claude skill suite for running a small managed IT services business (MSP). Nineteen skills that work as one system: every client-visible number comes from one pricing skill, every piece of content follows one brand skill, and every legal-adjacent workflow carries an attorney escalation path.
 
 Built and proven inside a working MSP, then white-labeled. The operational structure ships complete; the identity and the numbers are yours to fill in.
 
@@ -19,21 +19,22 @@ Foundation skills (the ones everything else defers to):
 - `msp-brand`: your identity, colors, voice, and signature. A fill-in template; this is where you make the kit yours.
 - `msp-sales`: outreach, call scripts, discovery, objection handling, pipeline, plus a 9-file reference library.
 - `msp-marketing`: content engine and distribution playbook. Resources articles, social posts, licensed marketing-pack rewrites, idea bank, content log, and the channels-and-tactics playbook.
+- `msp-social`: social media operations. The channel rollout, account setup and ownership, the scheduling tool, and the monthly pipeline that turns a licensed marketing pack into approved, scheduled posts. Nothing posts without approval.
 - `msp-leadgen`: prospecting research. Territory sweeps with a desk-scoring rubric, decision-maker identification, per-prospect contact plans, and first-touch drafts that feed the sales pipeline.
 - `msp-pricing`: a pricing configurator with cost model references and a working quote script, plus the break-fix rate card, website build and Website Care pricing, and AI adoption project pricing.
 - `msp-legal`: your document stack (MSA, Orders, SOW, DPA, waivers, and the website documents) and negotiation playbook.
 - `msp-technical-writing`: prose form for everything that is not marketing or direct customer communication, plus the steps, troubleshooting, and technical process descriptions inside customer content. Based on ASD-STE100 Simplified Technical English. Includes the `scripts/ste-lint.py` linter.
 
-Services beyond managed IT (optional; turn them off during setup if you don't offer them):
+Project offerings (one-time projects outside the managed agreement; each one leads to a managed offer that fits the client; turn them off during setup if you don't offer them):
 
-- `msp-website-setup`: website builds (a side offering) on a standard pipeline for client static websites with git-based dev/prod deployment, always in a hosting account in the client's name. Website Care (monthly management of the client's own hosting, domain, and DNS) is a managed line item that can be a client's only managed service.
+- `msp-website-setup`: website builds (a project offering) on a standard pipeline for client static websites with git-based dev/prod deployment, always in a hosting account in the client's name. Website Care (monthly management of the client's own hosting, domain, and DNS) is a managed line item that can be a client's only managed service.
 - `msp-ai-adoption`: client AI discovery, starter plans, workflow cards, and prompts for Copilot, Gemini, ChatGPT, or Claude. Sold as a fixed-fee project.
 
 Delivery skills (day-to-day operations):
 
 - `msp-onboarding`: 30-day runbook from Closed Won to steady state.
 - `msp-offboarding`: client exit runbook, including website handover. Full service to the last day, never hold data hostage.
-- `msp-helpdesk`: P1-P4 priority matrix, response targets, escalation, security incident track.
+- `msp-helpdesk`: P1-P4 priority matrix, response targets, escalation, security incident track, and a compromised mailbox checklist.
 - `msp-maintenance`: patching, backup verification, monitoring triage, on-call, change management, and recurring Website Care work.
 - `msp-client-comms`: operational message templates (maintenance, incidents, advisories, price changes, and more).
 - `msp-qbr`: quarterly business review process and client scorecard.

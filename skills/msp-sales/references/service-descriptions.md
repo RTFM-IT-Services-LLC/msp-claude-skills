@@ -265,3 +265,63 @@ right direction. (Need a simple website? We can build that too, you'll own it ou
 can look after it every month if you'd like.)
 
 **Outcome language:** "You never have to referee an argument between two vendors again."
+
+---
+
+## AI Adoption Project
+
+**Tagline:** "Your team already has AI. We show them where to start."
+
+**Public name and page:** in client copy, use your public name for the AI project
+(msp-ai-adoption Setup Decision 6) and link to your public AI page on {{DOMAIN}}. Call to
+action: the link you set in the same Setup Decision. Never put a price in copy (msp-pricing).
+
+**Short version:**
+You already have AI tools, probably more than you realize. We look at how you actually work,
+pick the three tasks where AI will save you real time, and hand you step-by-step instructions
+and ready-to-use prompts for the tools you already pay for. We also tell you what should never
+go into AI, so you can use it without worrying about your data.
+
+**What you get:** your AI starter plan, three step-by-step guides, a prompt starter sheet, clear
+rules for your data (plus our recommendations for a simple AI use policy), a walkthrough with
+your team on a live video call, and a 30-day check-in.
+
+**Good to know:** It's a one-time project with a fixed fee, quoted up front before any work
+starts. No monthly IT plan required. We work with Copilot (on Microsoft's email and
+productivity platform), Gemini (on Google's), ChatGPT, and Claude, and we help move staff off
+personal AI accounts into a business account you control. Managed clients get their AI progress
+reviewed in their regular business reviews.
+
+**Outcome language:** "AI takes the busywork off your people, in the tools you already pay for."
+
+---
+
+## Printers
+
+**Tagline:** "When one acts up, you call us, not the printer company."
+
+**Short version:**
+Business-class office printers kept connected, updated, and working for everyone. When one acts
+up, you call us, not the printer company.
+
+**Internal scope:** the Managed Printer line covers business-class, networked printers only. No
+toner or supplies. Physical repairs and swaps use the client's on-site time or break-fix rates
+(msp-pricing cost model).
+
+**Outcome language:** "Printing just works, and nobody sits on hold with the printer company."
+
+---
+
+## Extra Security, When You Need It
+
+**Tagline:** "Add what your business or your insurer asks for."
+
+**Short version:**
+Every managed client gets our standard security protections. When your business or your insurer
+asks for more, we add it: phishing tests and training for your team, web filtering, dark-web
+password alerts, stronger email and sign-in protection, and a yearly written risk assessment.
+
+**Internal scope:** msp-security Tier 2, quoted per client through msp-pricing. Use "aligned
+with" for frameworks, never "compliant".
+
+**Outcome language:** "You add the protection you need, when you need it."

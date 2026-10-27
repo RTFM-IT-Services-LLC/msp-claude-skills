@@ -9,7 +9,7 @@ description: >
   "draft a case study", "the client came back on the proposal", "they countered", "they said
   no because of cost", reviving a dead or gone-dark deal, or any mention of winning new
   clients, following up with leads, or building sales materials for an IT services business,
-  even if the user doesn't say "MSP". Also for side offerings (AI adoption, websites).
+  even if the user doesn't say "MSP". Also for project offerings (AI adoption, websites).
   Marketing content and channels belong to msp-marketing. Apply alongside msp-brand (identity, voice, visuals) and msp-pricing (any number a client
   could see).
 ---
@@ -102,19 +102,30 @@ full internal mapping):**
   clients will have nothing else managed); pricing in msp-pricing
 - Business phones (VoIP), including secure e-fax and auto attendants. Note: no seat price
   exists yet; quote VoIP as project + vendor liaison and never invent a seat price
+- Printers: business-class, networked office printers only. Bills as the Managed Printer line
+  in msp-pricing
+- Extra security when you need it: phishing tests and training, web filtering, dark-web
+  password alerts, stronger email and sign-in protection, and a yearly written risk assessment
+  (msp-security Tier 2, quoted per client through msp-pricing)
+- Regular business reviews: the QBR, part of every managed engagement (msp-qbr)
 
-**Side offerings (not core; never lead with them, never let them replace the managed
-conversation):**
+**Project offerings (one-time projects, not part of the managed agreement):**
 - **Website builds** (msp-website-setup): simple static sites for small businesses, built
   under a Website Development SOW. The site runs in a hosting account in the client's name, so
   the client owns the site, the domain, and the hosting account. After launch the client either
   takes Website Care (monthly, managed) or calls us break-fix.
-- **AI adoption help** (msp-ai-adoption): a short, specific plan for starting with AI in the
-  tools the client already has. Pricing in msp-pricing (AI Adoption side offering).
+- **AI adoption project** (msp-ai-adoption): a short, specific plan for starting with AI in
+  the tools the client already has. Public page: your public AI page on {{DOMAIN}}. Use your
+  public name for the AI project (msp-ai-adoption Setup Decision 6) in all client-facing text.
+  Pricing in msp-pricing ("Project Offering: AI Adoption" section).
 
-Both exist for the same two reasons: they answer a real question for managed clients, and they
-are a low-cost way to win many small clients outside the ICP, whose volume turns into reviews and
-referrals. See section 10.
+**Every offering leads to managed services (shipped example default policy).**
+{{COMPANY_NAME}} has no minor offerings on the side. Each offering is a way in, and the goal of
+every client relationship is a managed agreement. Never steer a conversation away from something
+{{COMPANY_NAME}} offers, and never treat an offering as a distraction. If {{COMPANY_NAME}} does
+not want to sell something, it does not offer it (see Deliberately NOT sold). Project offerings
+win many clients of every size, and their wins turn into reviews and referrals. Each project
+client then gets a managed offer that fits them. Section 10 says when to make that offer.
 
 **Deliberately NOT sold:** SEO/site analytics, payment processing, hosting client sites in
 {{COMPANY_NAME}}'s own accounts, and datacenter networking. Refer these out; details and talk
@@ -165,7 +176,8 @@ reference files as needed:
   frameworks. Load when writing outreach emails.
 
 - **`references/service-catalog.md`**: The internal catalog mapped to sales language: what we
-  sell, the side offerings (website builds, AI adoption), what we deliberately don't sell, the
+  sell, the project offerings (website builds, AI adoption projects), what we deliberately
+  don't sell, the
   VoIP standing rule, presentation rules (the
   $1,000/month public minimum, the term ladder, options not blocks), and what discovery must
   count. Load whenever describing services, scoping a prospect, or writing a proposal. All
@@ -426,26 +438,47 @@ prospect insight (pain points, buyer language), it draws on this skill's
 
 ---
 
-### 10. Side Offerings: AI Adoption and Website Builds
+### 10. Project Offerings: AI Adoption and Website Builds
 
 **When:** A managed client or prospect asks about AI or a website, a small business or
-individual outside the ICP asks for either, or the user wants a pitch, description, or
-follow-up for one.
+individual outside the ICP asks for either, a lead comes in through the website form, or the
+user wants a pitch, description, or follow-up for one.
 
-**When to offer them:**
-- **Managed clients:** only when they ask, or when a QBR or ticket shows a real need. Never
-  push a side offering into a managed-services sale; it distracts from the agreement.
-- **ICP prospects:** the free AI conversation is a door-opener (msp-pricing sets who gets it
-  free). Use it to earn the discovery call, then run the normal managed process.
-- **Small clients and individuals outside the ICP:** offer freely. This is a volume play:
-  small, quick wins bring reviews and referrals far faster than one large client. Do not try to
-  convert them to managed services; if one grows into the ICP, the relationship is already warm.
+**The rule:** every project is a path to a managed agreement (see "Every offering leads to
+managed services" above). Deliver what the client came in for first, and do it well. Then make
+a managed offer that fits the client, at the natural point for that project.
+
+**When to offer them, and when to raise managed services:**
+- **Managed clients:** offer a project when they ask, or when a QBR or ticket shows a real
+  need. A project adds to the agreement and never replaces the managed conversation. Review AI
+  project progress in each business review (msp-qbr).
+- **ICP prospects (outbound and referral, not website leads):** the free AI conversation is a
+  door-opener (msp-pricing sets who gets it free). Use it to earn the discovery call, then run
+  the normal managed process.
+- **Website leads for AI.** A lead whose form interest is the AI project came from your public
+  AI page on {{DOMAIN}} (msp-ai-adoption Setup Decision 6). Keep the first call on AI. Do not
+  pivot it to managed services.
+  1. Run a short scoping call.
+  2. If the business fits the ICP, log the fit and offer the free AI conversation
+     (msp-pricing).
+  3. Quote Standard (msp-pricing).
+  4. Deliver the project, then open the managed conversation at the 30-day check-in.
+- **Small clients and individuals outside the ICP:** offer projects freely. Small, quick wins
+  bring reviews and referrals far faster than one large client. Every one of these clients also
+  gets a managed offer that fits them. Below the engagement minimum, that offer is Website Care,
+  which can stand alone (msp-pricing). Offer full managed IT only when the client clears the
+  minimum. Make the offer at the natural point: the SOW stage for Website Care, the 30-day
+  check-in for AI. If the client grows into the ICP, the relationship is already warm.
+- **Lean AI sales:** Lean has no 30-day check-in. Send a short, free follow-up email at 30 days
+  that asks how it went and makes the managed offer that fits the client.
 
 **Client-facing descriptions (follow msp-brand; no prices in marketing):**
 - *AI adoption:* "You already have AI tools, probably more than you realize. We look at how you
   actually work, pick the three tasks where AI will save you real time, and hand you
   step-by-step instructions and ready-to-use prompts for the tools you already pay for. We also
   tell you what should never go into AI, so you can use it without worrying about your data."
+  Use your public name for the AI project (msp-ai-adoption Setup Decision 6). Link to your
+  public AI page on {{DOMAIN}}, and use the call-to-action link from the same Setup Decision.
 - *Website:* "A clean, fast website that works on phones and tells people what you do and how
   to reach you. You own it outright: the site, the domain, and the account it runs on."
 - *Website Care:* "Want us to keep an eye on it? We handle the domain, the settings, and small
@@ -573,10 +606,12 @@ Settle these before this skill goes live for your shop:
   it here.
 - **VoIP seat pricing.** No per-seat VoIP price ships with this kit. Decide your own model before
   quoting VoIP as anything other than project-plus-liaison work (see `references/service-catalog.md`).
-- **Side offerings.** Website builds with Website Care, and AI adoption projects, ship as side
-  offerings (section 10). Decide whether you offer either; if not, follow the side-offering
-  opt-out list in msp-setup Phase 3, which covers this skill and every other file that mentions
-  them.
+- **Project offerings.** Website builds with Website Care, and AI adoption projects, ship as
+  project offerings (section 10), under the shipped example default policy that every offering
+  leads to managed services. Decide whether you offer either; if not, follow the
+  project-offering opt-out list in msp-setup Phase 3, which covers this skill and every other
+  file that mentions them. If you offer the AI project, set its public name, page, and
+  call-to-action link in msp-ai-adoption Setup Decision 6.
 - **Niche timing.** This skill defaults to "don't niche yet, build broad pipeline first." Decide
   when (or whether) your shop specializes in a vertical.
 

@@ -2,15 +2,16 @@
 name: msp-marketing
 description: >
   Use this skill for marketing CONTENT for your managed IT services (MSP) business: website
-  "resources" articles, social posts (professional network, local listing, general social),
-  newsletters, rewriting licensed marketing packs or articles into your voice, post ideas,
-  content calendars, repurposing, and SEO titles. Also for channel and tactic questions: "where
-  should we market", "how do we get found locally", listings, reviews, chambers, CPA/insurance
-  referral partnerships, workshops, or a marketing rhythm. Trigger on "write a resource",
-  "rewrite this article", "digest this marketing pack", "what should we post", or "turn this
-  into a social post". Sales outreach and referral program mechanics belong to msp-sales;
-  notices to existing clients belong to msp-client-comms. Apply alongside msp-brand and
-  msp-pricing (any number a client could see).
+  "resources" articles, social posts for each active channel (local listing, general social,
+  microblog, professional network, and more), newsletters, rewriting licensed marketing packs
+  or articles into your voice, post ideas, content calendars, repurposing, and SEO titles. Also
+  for channel and tactic questions: "where should we market", "how do we get found locally",
+  listings, reviews, chambers, CPA/insurance referral partnerships, workshops, or a marketing
+  rhythm. Trigger on "write a resource", "rewrite this article", "digest this marketing pack",
+  "what should we post", or "turn this into a post". Posting, scheduling, channel setup, and
+  the monthly pack pipeline belong to msp-social. Sales outreach and referral program mechanics
+  belong to msp-sales; notices to existing clients belong to msp-client-comms. Apply alongside
+  msp-brand and msp-pricing (any number a client could see).
 ---
 
 # MSP Marketing Content Skill
@@ -33,13 +34,18 @@ promise.
 
 ## How This Skill Divides Work With Its Siblings
 
-Four skills cover {{COMPANY_NAME}}'s go-to-market. Stay in your lane and hand off cleanly:
+Five skills cover {{COMPANY_NAME}}'s go-to-market. Stay in your lane and hand off cleanly:
 
-- **msp-marketing (this skill):** content production and marketing distribution. Resources
-  articles, social posts, newsletter content, rewrites of outside material, the idea bank, the
-  content calendar, repurposing, per-post SEO, and the channels-and-tactics playbook (where the
-  company markets: local business listing, reviews, directories, partnerships, workshops, the
-  weekly rhythm).
+- **msp-marketing (this skill):** what the content says. Resources articles, social posts,
+  newsletter content, rewrites of outside material, the idea bank, the CTA library, the content
+  calendar, repurposing, per-post SEO, the content log, the format menu (including the
+  per-platform post formats), and the channels-and-tactics strategy (referrals, local business
+  listing, reviews, directories, partnerships, workshops, the weekly rhythm).
+- **msp-social:** where posts go and how they get there. The social channel list and its
+  phases, account setup and ownership, the optional owner-visibility rule, profile assets, your
+  social scheduling tool, the monthly pack pipeline (intake folder, review page, scheduled
+  task), and manual channels (the neighborhood platform). This skill writes the posts.
+  msp-social schedules them.
 - **msp-sales:** what to say to prospects and how to sell. Outreach, scripts, case studies,
   pipeline, objections, discovery, the referral program mechanics, and the value conversation
   around a price. "Who should we target" is sales (ICP); "where and how do we market" is this
@@ -57,7 +63,9 @@ Adjacent handoffs:
   governs. This skill may adapt the same topic into a public resource afterward.
 - **msp-website-setup** owns the publishing mechanics of the company website (repo, hosting,
   dev/prod pipeline). This skill delivers finished copy; posting it to the site follows that
-  skill's process.
+  skill's process. In the monthly pack pipeline, approved articles go to the `dev` branch and
+  the owner approves the hosting platform's preview before the merge to `main` (msp-social sets
+  the order).
 - **Case studies** stay with msp-sales (they are sales assets). This skill may repurpose a
   finished case study into social posts.
 - **msp-technical-writing** applies only to how-to steps, troubleshooting steps, and technical
@@ -82,7 +90,8 @@ Adjacent handoffs:
 - **`references/channels-and-tactics.md`**: Where and how a small MSP actually markets: the
   tiered channel playbook (referrals, local listing, reviews, partnerships, community,
   professional network, paid) and the weekly rhythm. Load for any "where should we market" or
-  marketing-plan question, and when deciding where a finished piece should go.
+  marketing-plan question. The social channel list, phases, and posting mechanics live in
+  msp-social.
 
 ---
 
@@ -124,8 +133,9 @@ user wants it spread across the month.
 1. Load the idea bank, the content log, and the format menu.
 2. Build a month at a glance: one theme per week, each theme anchored by one full resources
    article and its repurposed social variants.
-3. Mix sources: roughly half from the current marketing pack (when one exists), half from the
-   idea bank, so the company never depends entirely on either.
+3. Follow your cadence (Setup Decision 1; shipped example default: post whatever the current
+   licensed marketing pack supplies, spread across the month, plus the owner's original posts).
+   Use the idea bank for original post ideas, or to fill a month with no pack.
 4. Mark each slot with topic, format, channel, target date, and status.
 5. Deliver as a table in chat or a Word doc if asked. The calendar is a proposal; the owner
    settles it.
@@ -136,9 +146,15 @@ user wants it spread across the month.
 variants unless the user says otherwise. The default chain:
 
 1. Full resources article (the anchor)
-2. Professional network post (the strongest single insight, not a summary)
-3. Local business listing post (local angle, direct CTA)
-4. Newsletter blurb (tease plus link)
+2. One post for each active social channel, per its format in `references/format-menu.md`.
+   The active channel list lives in msp-social (Build status). In the example default rollout,
+   phase 1 is the local business listing profile (local angle, direct CTA), the general social
+   network page, and the microblog platform. A professional network post (the strongest single
+   insight, not a summary) joins the chain whenever that channel is active.
+3. Newsletter blurb (tease plus link), once the newsletter launches
+
+If you apply the owner-visibility rule in msp-social, hold professional network posts and do
+not name the owner as the owner.
 
 Each variant is written fresh for its channel per `references/format-menu.md`, never truncated
 copy-paste. Deliver the whole chain together with `---` dividers.
@@ -157,6 +173,8 @@ marketing activity beyond the content itself.
 3. When the advice produces work, route it: content pieces stay here; outreach and the referral
    talk track go to msp-sales; review-ask moments live in msp-qbr and msp-helpdesk flows;
    "where did this client come from" tracking goes to msp-metrics.
+   Social distribution questions (which social channels, when to add one, account setup,
+   scheduling, your social scheduling tool) go to msp-social.
 4. Deliverable: conversational advice, or a written marketing plan (chat or .docx) built from
    the playbook's tiers and rhythm.
 
@@ -182,9 +200,11 @@ msp-brand is the source of truth for voice; these rules operationalize it for co
 - **Exclusions rule:** never produce content that pitches services the company deliberately does
   not sell (the example-default list: SEO/site analytics, payment processing, datacenter
   networking; the current list lives in msp-sales `references/service-catalog.md`).
-  Educational mentions are fine; positioning the company as the provider is not. Website builds
-  and Website Care are sold by default and may be mentioned (no prices), but never position the
-  company as a web host: the site always lives in the client's own account.
+  Educational mentions are fine; positioning the company as the provider is not. Website
+  builds, Website Care, and the AI adoption project (under your public name for it; see
+  msp-pricing and msp-ai-adoption Setup Decisions) are sold by default and may be mentioned (no
+  prices), but never position the company as a web host: the site always lives in the client's
+  own account.
 - **No prices.** Content educates; the quote comes from msp-pricing through the sales process.
   The referral program may be mentioned using msp-sales' standing language, never with dollar
   amounts.
@@ -216,7 +236,10 @@ to add it, or offer to note it for the next source-folder session.
 
 ## Output & File Handling
 
-- Single social posts and short pieces: plain text in chat, ready to copy-paste.
+- Social posts from the monthly pipeline or an original post: they go to the review page and
+  then to your social scheduling tool through msp-social, not copy-paste. Plain text in chat is
+  only for a one-off draft the owner asks for outside the pipeline.
+- Short pieces outside the pipeline: plain text in chat, ready to copy-paste.
 - Full resources articles: Markdown file (the website pipeline consumes plain content; check
   msp-website-setup for the current article format before final delivery to the site).
 - Calendars and multi-piece packs: chat table or Word doc (.docx, via the docx skill) on request.
@@ -230,8 +253,7 @@ If the request is vague, ask ONE of these, then proceed:
 
 - "Do you want the full chain (article plus social variants) or just one format?"
 - "Is there source material for this, or should I pull from the idea bank?"
-- "Is this for the website, your professional network, your local business listing, or the
-  newsletter?"
+- "Is this for the website, the social channels, or the newsletter?"
 
 If you can make a reasonable assumption, make it and say so.
 
@@ -241,23 +263,30 @@ If you can make a reasonable assumption, make it and say so.
 
 Settle these before this skill goes live for your shop:
 
-1. **Publishing cadence.** The shipped default: one full resources article per week with its
-   repurposing chain. Could be biweekly while the business is young. Pick your cadence.
-2. **Channel list and tiers.** The shipped default is the tier ordering in
+1. **Publishing cadence.** The shipped example default: whatever the monthly licensed marketing
+   pack supplies, spread across the month, plus the owner's original posts. With no pack, fill
+   the month from the idea bank. Pick your cadence.
+2. **Social channel list.** The channel list, its phases (an example default rollout), and the
+   optional owner-visibility rule live in msp-social. Settle them there. This skill writes one
+   post per active channel.
+3. **Social media audience.** The shipped example default: small and medium business owners
+   and decision makers. Cast the widest net. Narrow it to your target verticals if you prefer.
+4. **Tactic tiers and weekly rhythm.** The shipped default is the tier ordering in
    `references/channels-and-tactics.md` (referrals, local listing, reviews, and resources SEO
    first; partnerships and community second; professional network and newsletter third; paid
-   last; no short-form video or microblog platforms to start). Includes the shipped weekly
-   rhythm (roughly 2-3 owner-hours a week). Adjust for your market and capacity.
-3. **Content sources.** The rewrite playbook assumes a paid MSP marketing content membership
+   last) and the shipped weekly rhythm (roughly 2-3 owner-hours a week). Adjust for your market
+   and capacity. The social channel list lives in msp-social (Decision 2).
+5. **Content sources.** The rewrite playbook assumes a paid MSP marketing content membership
    whose packs are licensed for member adaptation. Record which memberships or licensed sources
    you actually hold; anything else is inspiration only under the playbook's rights rules.
-4. **Newsletter existence and cadence.** A client/prospect newsletter is referenced in the
+6. **Newsletter existence and cadence.** A client/prospect newsletter is referenced in the
    format menu as an example default, not launched for you. Shipped proposal: monthly, built
    from that month's published resources.
-5. **Format menu word counts.** The lengths in `references/format-menu.md` are drawn from
+7. **Format menu word counts.** The lengths in `references/format-menu.md` are drawn from
    web-writing norms, not measured against your performance data. Adjust once real posts exist.
-6. **Idea bank contents.** Topics in `references/idea-bank.md` are seed proposals. Prune
+8. **Idea bank contents.** Topics in `references/idea-bank.md` are seed proposals. Prune
    anything you'd never write about, and add your own.
-7. **Standing site offer.** The CTA library's default offer is a free IT check-up at
+9. **Standing site offer.** The CTA library's default offer is a free IT check-up at
    {{DOMAIN}}/get-started (an example default). Confirm your own standing offer and landing
-   page, and update the CTA library to match.
+   page, and update the CTA library to match. The AI call to action uses example link paths;
+   point them at your own pages, or drop it if you do not sell the AI adoption project.

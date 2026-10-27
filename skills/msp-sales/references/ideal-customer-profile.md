@@ -100,7 +100,7 @@ outreaching, customize your opening line to speak the vertical's language.
 - **What they want:** Documented compliance, a partner who understands their requirements
 - **How to sell:** Lead with compliance outcomes. Show you understand their specific requirements.
 - **What to avoid:** Generic pitches. They need to know you understand HIPAA/PCI/cyber insurance
-- **Magic words:** "cyber insurance requirements," "documented controls," "compliance-ready"
+- **Magic words:** "cyber insurance requirements," "documented controls," "aligned with your framework"
 
 ### Persona 4: The Tech-Aware Skeptic
 - **Title:** Any title, but has some technical background

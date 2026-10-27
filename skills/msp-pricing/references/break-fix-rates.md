@@ -66,8 +66,8 @@ rounded up to $10). Anything below needs owner sign-off, same rule as the manage
 - Website Care clients are under agreement: edit time past their monthly allowance bills at the
   managed rate. Website owners without Care bill at the non-contract rate. Build and Care prices
   live in the SKILL.md section "Websites: Builds and Website Care".
-- AI adoption projects price from this card as fixed-fee projects; the scope, hours, and
-  prices live in the SKILL.md section "Side Offering: AI Adoption". When this card changes,
+- AI adoption projects price from this card as fixed-fee projects. The scope, hours, and
+  prices live in the SKILL.md section "Project Offering: AI Adoption". When this card changes,
   re-derive those project prices in the same pass.
 - Bundled on-site allowances inside managed agreements are priced by the configurator at the
   standard anchor and ride the contract ladder (see `cost-model.md` section 7). Overage beyond

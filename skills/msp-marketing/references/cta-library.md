@@ -15,7 +15,7 @@ standing offer differs, update every pattern below to match (see SKILL.md Setup 
 **Security topics → the check-up, security-flavored:**
 > Not sure where you stand? Our free IT check-up looks at your email, backups, and security
 > settings, and we'll tell you in plain English what we'd fix. No pressure, no jargon.
-> [Get started](https://{{DOMAIN}}/get-started.html)
+> [Get started](https://{{DOMAIN}}/get-started)
 
 **Backup/disaster topics → the test question:**
 > When was the last time someone actually tested your backups? If you're not sure, that's worth a
@@ -28,6 +28,15 @@ standing offer differs, update every pattern below to match (see SKILL.md Setup 
 **Buying/planning topics → the second opinion:**
 > Weighing a technology decision? We're happy to be a second opinion, even if you never hire us.
 > Email {{INFO_EMAIL}} or call {{PHONE}}.
+
+**AI topics → the AI adoption project:**
+> Your team already has AI. We show them where to start: three tasks, step-by-step guides, and
+> clear rules for your data, all in the tools you already pay for.
+> [Ask about our AI adoption project](https://{{DOMAIN}}/get-started?interest=ai). Want to read
+> more first? See [{{DOMAIN}}/ai](https://{{DOMAIN}}/ai).
+
+Use your public name for the project (see msp-pricing and msp-ai-adoption Setup Decisions). The
+`?interest=ai` link and the `/ai` page path are example defaults; point them at your own pages.
 
 **Soft/no-sell variant (use at least once a month so not everything sells):**
 > Have a tech question? Reach out any time at {{INFO_EMAIL}}. We're always happy to point you in

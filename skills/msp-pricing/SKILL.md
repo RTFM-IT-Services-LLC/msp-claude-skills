@@ -194,7 +194,9 @@ the number. The contract ladder is how you reward a longer commitment, not a ref
   thin margin. (Five percent per year is the absolute ceiling; it would land the five-year price
   a hair above the floor with no useful buffer, so 4% is the standing choice.)
 - **Engagement minimum is $1,000/month.** Below this a managed client costs more attention than it
-  returns. Re-scope, raise it, or pass.
+  returns. Re-scope or raise it. If the client cannot clear it, do not sell managed IT. Offer
+  projects (the AI adoption project, a website) and Website Care, which can stand alone below the
+  minimum.
 - **Response time never varies by option or by price.** Differentiate options by what is included and
   how proactive you are, never by how fast you answer. Every client gets your best response.
 - **Onboarding and migration are billed separately**, always, at the managed-client rates on
@@ -302,14 +304,22 @@ of the site source sufficient to restore it, and content edits up to 30 minutes 
 
 ---
 
-## Side Offering: AI Adoption
+## Project Offering: AI Adoption
 
-AI adoption is a side offering, not a core service, the same way website builds are (Website
-Care, by contrast, is a managed line item). It exists for two cases: managed clients who ask
-about AI, and small clients or individuals outside the ICP. The second group is a volume play:
-many small, quick projects produce more happy clients, and so more reviews and referrals, than one
-large client ever will. The delivery process lives in msp-ai-adoption; this section owns every
-number. All figures here are shipped example defaults (see Setup Decisions).
+The AI adoption project is a one-time project, not part of the managed agreement. Use your
+public name for the AI project (msp-ai-adoption Setup Decision 6) in every quote and
+client-facing line. Website builds work the same way. Website Care, by contrast, is a managed
+line item. Like every {{COMPANY_NAME}} offering, the AI adoption project is a path to managed
+services (msp-sales, section 10). It serves three cases:
+
+- managed clients who ask about AI
+- any small business that comes in through your public AI page on {{DOMAIN}}
+- small clients or individuals outside the ICP
+
+The small-client group is a volume play. Many small, quick projects produce more happy clients
+than one large client ever will, and so more reviews and referrals. The delivery process lives
+in msp-ai-adoption. This section owns every number. All figures here are shipped example
+defaults (see Setup Decisions).
 
 It is a one-time, fixed-fee project priced from break-fix hours. The configurator does not apply
 (there are no recurring blocks), the $1,000/month engagement minimum (example default) does not
@@ -338,7 +348,9 @@ apply, and value factors do not apply.
 - Floors are the remote floor ($90/hr) times the hours. Below the floor needs owner sign-off,
   same as everything else.
 - Lead with Standard. Offer Lean only when the client wants to run it themselves or budget is
-  the blocker. Both clear the 50% margin floor.
+  the blocker. Both clear the 50% margin floor. Your public AI page describes Standard
+  (walkthrough and 30-day check-in included). A Lean quote must say in writing that it has no
+  walkthrough and no check-in.
 - Scope that grows (more users, more workflow cards, extra sessions for a team) is re-quoted
   from hours at the client's card rate, still as a fixed fee. Out-of-scope requests after
   delivery bill hourly at the card rate (remote: 30-minute minimum, then 15-minute increments).
@@ -347,7 +359,9 @@ apply, and value factors do not apply.
 
 - A 30 to 45 minute AI conversation is free for managed clients and for prospects in the ICP (a
   door-opener). Individuals and small clients outside the ICP get a normal short scoping call,
-  but the advice itself is the paid project.
+  but the advice itself is the paid project. Your website does not advertise this
+  conversation. Website leads get the short scoping call first. Offer the free conversation
+  only after that call confirms ICP fit.
 - For managed clients, ongoing AI progress review folds into the QBR at no extra charge, and AI
   license administration is covered like any other SaaS. The written Starter Plan pack is not
   free; it is the managed-price project above.
@@ -370,8 +384,9 @@ apply, and value factors do not apply.
   engagement letter instead. The kit does not include that letter; draft it with your attorney
   (msp-ai-adoption Setup Decision 3), and route individual projects through msp-legal until it
   exists.
-- **No paid workshop product.** Group "AI for your team" sessions run only as free marketing
-  workshops (msp-marketing). A client who wants their team trained gets extra walkthrough
+- **No paid workshop product.** Group sessions run only as the free "AI basics workshop"
+  (example name; msp-marketing). Your public name for the AI project always means the paid
+  project, never the workshop. A client who wants their team trained gets extra walkthrough
   hours on their own project, priced from hours.
 - **Marketing carries no AI adoption prices**, same as every other price.
 
@@ -415,10 +430,12 @@ before this skill goes anywhere near a client:
   1/2/3/5-year ladder with Standard, Plus, Pro, and Business tiers keyed to the hosting platform's
   plans. Decide whether you build and manage websites at all; if you do, set your own build and
   Care prices, and match them to your website paper (msp-legal document-stack entry 13). If you
-  do not, follow the side-offering opt-out list in msp-setup Phase 3.
+  do not, follow the project-offering opt-out list in msp-setup Phase 3.
 - **AI adoption project.** The example prices a 4.5-hour project on 5 hours: Standard $650
   non-contract / $550 managed / $450 floor, Lean $450 / $330 / $270 floor. Decide whether you
   offer it (msp-ai-adoption Setup Decision 1) and rebuild these from your own break-fix card.
+  If you offer it, set its public name, page, and call-to-action link in msp-ai-adoption Setup
+  Decision 6, and use that name on every quote.
 
 Once you have settled these, re-run `scripts/price_quote.py` against a known client (for example
 `scripts/client.template.json`) and check how far the band moved before quoting anything live.

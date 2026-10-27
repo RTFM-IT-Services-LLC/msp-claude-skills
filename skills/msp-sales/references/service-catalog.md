@@ -27,6 +27,9 @@ content; the block names are internal vocabulary only.
 | On-site presence ("about one visit a month") | Bundled on-site hours; extras bill at the managed on-site hourly rate (msp-pricing break-fix card) |
 | Vendor wrangling, domains & DNS | Included in the engagement (vendor liaison) |
 | Website care ("we look after your website, domain, and DNS; it stays in your own account") | Website Care line item: its own Website Hosting and Care Service Order, term ladder, and tiers (msp-pricing). Can be a client's only managed line |
+| Printers (business-class office printers) | Managed Printer line: business-class, networked printers only (msp-pricing cost model) |
+| Extra security, when you need it (phishing tests and training, web filtering, dark-web password alerts, stronger email and sign-in protection, a yearly written risk assessment) | msp-security Tier 2 add-ons, quoted per client through msp-pricing |
+| Regular business reviews ("regular business reviews to check progress and plan what's next") | The QBR (msp-qbr), part of every managed engagement |
 
 Per-user blocks carry the engagement; device blocks ride along. Anchors, the floor, START,
 and the term ladder all come from msp-pricing.
@@ -42,21 +45,23 @@ absorb onboarding or migration into the recurring price. Categories:
   cabling where low-voltage licensing requires)
 - Emergencies and after-hours work (incident and priority rates)
 - Training and consultation
-- Side offerings: website builds and AI adoption projects (see Side Offerings below)
+- Project offerings: website builds and AI adoption projects (see Project Offerings below)
 
 Rates for all of the above live in msp-pricing.
 
-## Side Offerings (Not Core)
+## Project Offerings (Not Part of the Managed Agreement)
 
-Two offerings sit outside the managed lineup. They exist for managed clients who ask, and as a
-low-cost way to win many small clients and individuals outside the ICP, whose volume turns into
-reviews and referrals. Never lead with them in a managed-services sale. When and how to offer
-them, plus talk tracks and the review ask, live in the msp-sales SKILL.md (section 10).
+Two offerings are one-time projects outside the managed lineup. Every offering leads to managed
+services: each one is a way in, and each project client gets a managed offer that fits them.
+They serve three groups: managed clients who ask, any small business that comes in through the
+website, and small clients and individuals outside the ICP. The small-client volume turns into
+reviews and referrals. The msp-sales SKILL.md (section 10) says when and how to offer them and
+when to raise managed services. It also holds the talk tracks and the review ask.
 
 | What the client hears | What it is (internal) | Owning skills |
 |---|---|---|
 | "A clean, fast website that works on phones. You own it outright: the site, the domain, and the account it runs on." | Static site build, one-time project under a Website Development SOW. Runs on your static hosting platform in a hosting account in the client's own name (usually the platform's free plan); {{COMPANY_NAME}} is an administrator. Client owns domain, content, and code. After launch: Website Care (monthly, managed) or break-fix. | msp-website-setup (process, ownership model), msp-pricing (build and Care prices), msp-legal (Addendum, SOW, Care Order) |
-| "We look at how you actually work, pick the three tasks where AI will save you real time, and hand you step-by-step instructions and ready-to-use prompts for the tools you already pay for, plus what should never go into AI." | AI adoption project: Starter Plan, three workflow cards, prompt starter sheet, red list, walkthrough, 30-day check-in. Fixed fee from break-fix hours, Standard and Lean options. | msp-ai-adoption (delivery), msp-pricing (all numbers), msp-legal (paper) |
+| **Your public name for the AI project** (msp-ai-adoption Setup Decision 6; public page on {{DOMAIN}}): "We look at how you actually work, pick the three tasks where AI will save you real time, and hand you step-by-step instructions and ready-to-use prompts for the tools you already pay for, plus what should never go into AI." | AI adoption project: Starter Plan, three workflow cards, prompt starter sheet, red list, walkthrough, 30-day check-in. Fixed fee from break-fix hours, Standard and Lean options. | msp-ai-adoption (delivery), msp-pricing (all numbers), msp-legal (paper) |
 
 Rules for both:
 - Prices come from msp-pricing. Never quote from memory, and marketing carries no prices.

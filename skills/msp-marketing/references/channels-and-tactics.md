@@ -5,6 +5,10 @@ content is worth a startup MSP's limited hours. Ordered by expected ROI for a on
 MSP with more time than budget. Everything here is a shipped example default until the owner
 settles it (see SKILL.md Setup Decisions).
 
+The social channel list, its phases, account setup, and the posting mechanics (your social
+scheduling tool, the monthly pack pipeline, the review page) live in msp-social. This file keeps
+the wider tactic strategy.
+
 The through-line from current MSP marketing research: buyers shortlist on social proof and
 increasingly prefer to research without talking to a rep, so being easy to find and easy to
 trust beats chasing. For a local MSP that means reviews, local search, referral relationships,
@@ -20,8 +24,8 @@ is supporting it with content: a "know someone who needs us?" line in the newsle
 occasional referral mentions per the CTA library.
 
 **2. Your local business listing profile.** The single most important local-search asset. Keep
-every field complete, add photos (10+, refreshed occasionally), post 1-2 times a month from the
-repurposing chain, and answer every question and review. Listing posts are already a standing
+every field complete, add photos (10+, refreshed occasionally), post from the repurposing chain
+through the msp-social pipeline, and answer every question and review. Listing posts are already a standing
 format (format-menu.md #4).
 
 **3. Reviews.** Buyers shortlist on reviews before they ever call. Build the ask into the
@@ -32,7 +36,8 @@ brand voice. Never buy, trade, or incentivize reviews with anything of value.
 **4. The resources library itself (SEO).** Every article targets one phrase a business owner
 would type (format-menu.md SEO checklist). Local plus plain-English phrasing is the niche: big
 competitors don't write "what to do when your {{SERVICE_AREA}} office loses power." Consistency
-beats volume; a steady weekly-or-biweekly cadence compounds.
+beats volume; a steady cadence (the example default: the monthly pack, spread across the
+month) compounds.
 
 ## Tier 2: Relationship channels. A few hours a month, high trust yield.
 
@@ -53,13 +58,26 @@ association, or even a client's staff meeting. Every idea-bank security topic do
 workshop outline. Record or write up each session as a resources article afterward so one hour
 of speaking becomes permanent content.
 
+The free group AI session is the **AI basics workshop** (example name): a short, free
+introduction to using AI safely at work. It is marketing only, with no paid version
+(msp-pricing). Its call to action is the AI adoption project (see `cta-library.md`). Never give
+the free workshop the same name as the paid project, because that name means the paid project.
+
 ## Tier 3: Ongoing presence. Steady, low cost, slow burn.
 
 **8. Your professional social network.** The priority social channel for B2B. The owner's
 personal profile typically outperforms the company page; post to both, personal first
-(format-menu.md #3). Cadence default: 1-2 posts per week from the repurposing chain plus
-occasional first-person posts. Engage in local business groups as a helpful expert, never a
-pitcher.
+(format-menu.md #3). Cadence default: its post from each repurposing chain (when it is an
+active channel in msp-social) plus occasional first-person posts. Engage in local business
+groups as a helpful expert, never a pitcher. If you apply the owner-visibility rule in
+msp-social, hold professional network posts and do not name the owner as the owner.
+
+**8a. The other social channels.** In the example default rollout: the local business listing
+profile, the general social network page, and the microblog platform first (phase 1). The
+photo-first social platform, short-form video on the video-sharing platform, the short-form
+video platform, and the conversation platform once your social scheduling tool plan covers them
+(phase 2). The neighborhood platform by hand if the owner starts it. The list, phases, and
+triggers live in msp-social.
 
 **9. Email newsletter.** Monthly, built from that month's published resources (format-menu.md
 #5). List: clients, prospects who said "not yet," partner contacts, and workshop attendees.
@@ -78,8 +96,8 @@ vertical; needs a real budget and tracking before it makes sense. Shipped defaul
 organic and referral flow are established.
 
 **12. Skip for now:** cold-list buying, mass cold email (msp-sales owns targeted outreach,
-which is different), sponsorships without a relationship attached, short-form video and
-microblog platforms, and anything a lead-gen agency cold-calls to sell. Note for the future:
+which is different), sponsorships without a relationship attached, and anything a lead-gen
+agency cold-calls to sell. Note for the future:
 AI assistants increasingly answer "who's a good IT company near me?" from the same signals as
 local SEO (reviews, consistent listings, clear plain-language site copy), so Tier 1 work is
 also the AI-visibility play.
@@ -90,10 +108,11 @@ also the AI-visibility play.
 
 A sustainable floor for a busy founder, roughly 2-3 hours a week:
 
-- **Weekly:** publish one piece from the repurposing chain (article week) or one standalone
-  short piece (off week); one professional-network touch.
-- **Monthly:** 1-2 local listing posts, newsletter (once launched), one partner coffee or
-  community event, review asks as wins happen.
+- **Weekly:** the approved pieces from the repurposing chain go out on their dates through
+  msp-social; one professional-network touch (held if you apply the owner-visibility rule in
+  msp-social).
+- **Monthly:** approve the pack review page and the website preview (msp-social), newsletter
+  (once launched), one partner coffee or community event, review asks as wins happen.
 - **Quarterly:** one workshop or speaking slot; directory/citation checkup; review this playbook
   against what's actually producing conversations, with msp-metrics tracking where new
   clients came from.

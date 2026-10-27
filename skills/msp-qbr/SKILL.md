@@ -51,6 +51,9 @@ Pull from your PSA (ticketing) system and the stack:
 - Security posture items: MFA coverage, open advisories, incidents this quarter, and open
   findings against the msp-security baseline
 - Project status: done, in flight, proposed
+- AI project progress, if the client bought it: what stuck, what did not, and the next tasks
+  worth trying (msp-ai-adoption). If your public AI page promises this review to managed
+  clients, keep that promise.
 - Horizon items: warranty expirations, OS end-of-life dates, license renewals, hardware age
 - Open recommendations, and any declined ones with their waiver status (msp-legal)
 - The client's health scorecard from msp-metrics (internal; informs tone, does not get shown)
