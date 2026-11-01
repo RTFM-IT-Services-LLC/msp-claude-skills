@@ -47,6 +47,9 @@ standard signature block, and no em dashes anywhere.
 - **Client steps follow msp-technical-writing (Zone 2, strict mode).** This covers the "what to
   do" list in a security advisory and any reset or setup steps. Put the steps in their own
   numbered list. The rest of the message follows msp-brand.
+- **Letters as files:** a message sent as email text has no version. A letter sent as an
+  attachment (for example, a price change letter as a PDF) follows msp-brand section 4
+  (Document Versioning).
 
 Placeholders appear in [brackets]. The support intake address is {{SUPPORT_EMAIL}}
 ({{SUPPORT_ALIAS_EMAIL}} also opens a ticket; print {{SUPPORT_EMAIL}} in anything client-facing).

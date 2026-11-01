@@ -29,6 +29,10 @@ implausibly good, check the time entries before celebrating.
 msp-technical-writing in flavored mode (Zone 1). A client-facing consequence, such as a
 repricing letter, belongs to msp-client-comms and msp-brand.
 
+**Files:** every file (the filled monthly review sheet, a report, a client health note) follows
+msp-brand section 4 (Document Versioning). Example:
+`{{COMPANY_SLUG}}-monthly-review-october-2026-11-02-v1.0.xlsx`.
+
 **Defaults you must review:** the specific numbers in this skill are shipped example defaults
 from a working MSP. Review and replace them with your own before anything goes client-facing.
 

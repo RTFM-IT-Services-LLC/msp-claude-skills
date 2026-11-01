@@ -178,7 +178,9 @@ health report as a supporting number, never as the whole assessment.
 **Output:** an internal findings list (in the client's documentation) and a client-facing
 summary in plain English, branded per msp-brand, with each gap stated as risk, fix, and rough
 cost band from msp-pricing. Remediation inside the baseline is part of the managed service;
-anything new (a project, a Tier 2 add-on) is quoted.
+anything new (a project, a Tier 2 add-on) is quoted. When either output is a file, it follows
+msp-brand section 4 (Document Versioning). Example:
+`acme-dental-security-assessment-2026-11-01-v1.0.docx`.
 
 **The QBR Security row (msp-qbr), scored from the assessment:**
 

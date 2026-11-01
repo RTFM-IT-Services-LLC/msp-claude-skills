@@ -152,6 +152,8 @@ Four overlapping phases. Days are targets, not law; the sequence is the law.
   expect (per msp-helpdesk).
 - Hold the 30-day review with the owner or main contact: what was found, what was fixed, what
   remains as a risk, and a first sketch of the roadmap. This meeting seeds the first QBR.
+- Any document file from this phase (the 30-day review summary, the roadmap sketch, or a
+  documentation export) follows msp-brand section 4 (Document Versioning).
 
 **Definition of done:** all agents deployed and reporting, backups verified by a test restore,
 prior provider access removed, credentials vaulted, documentation set complete, billing counts

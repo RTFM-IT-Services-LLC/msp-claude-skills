@@ -83,6 +83,10 @@ documentation package in the flavored mode, with any procedure inside it in the 
 Deliver via a secure channel. Credentials transfer through the vault's secure sharing or an
 agreed secure method, never plain email.
 
+Name and stamp each file in the package per msp-brand section 4 (Document Versioning). Example:
+`acme-dental-asset-inventory-2026-11-01-v1.0.xlsx`. Then the successor knows which copy is
+current.
+
 ### 2. Transfer control
 
 - Confirm the client owns a working break-glass admin on their email and productivity platform,

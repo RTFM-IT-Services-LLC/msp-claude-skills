@@ -455,5 +455,8 @@ for voice and formatting and to `msp-sales` for the value framing. The client sh
 price wrapped in the outcome it buys, presented as options assembled for them, never as a naked
 spreadsheet or a standard tier card. The internal band (floor and opening ask) stays internal.
 
+A quote or proposal file follows msp-brand section 4 (Document Versioning) for its file name and
+stamp. A changed price always makes a new major version.
+
 Internal margin notes and quote rationale are Zone 1 of `msp-technical-writing` (flavored mode).
 Anything the client sees follows `msp-brand`.

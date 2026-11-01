@@ -244,6 +244,9 @@ to add it, or offer to note it for the next source-folder session.
   msp-website-setup for the current article format before final delivery to the site).
 - Calendars and multi-piece packs: chat table or Word doc (.docx, via the docx skill) on request.
 - Always deliver the repurposing chain pieces together, clearly labeled.
+- Name and stamp every file per msp-brand section 4 (Document Versioning). A resources article
+  puts its stamp in an HTML comment on the last line, so that the stamp never shows on
+  {{DOMAIN}}. Example: `{{COMPANY_SLUG}}-article-phishing-2026-11-01-v1.0.md`.
 
 ---
 

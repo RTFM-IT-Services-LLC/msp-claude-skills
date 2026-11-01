@@ -206,6 +206,11 @@ business? If not, is the protection worth the friction, and can the Order flex i
 - **Formatted output:** consult the `docx` skill for Word deliverables, save to the session's
   outputs or working folder (wherever the current environment delivers files to the user), and
   present the file. Verify zero em dashes before delivering.
+  Name and stamp the file per msp-brand section 4 (Document Versioning). Example:
+  `acme-dental-service-order-2026-11-01-v1.0.docx`. The stamp goes on its own line below the
+  page number. A changed term, or a revision after the client saw the document, makes a new
+  major version. The DRAFT banner for attorney review is separate from the version and stays
+  until the attorney signs off.
 
 ---
 

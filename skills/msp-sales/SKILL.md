@@ -575,6 +575,8 @@ service credit on your next invoice as a thank-you."
 **For anything branded (which is nearly everything):**
 - Load msp-brand first and apply its naming, contact, color, font, logo, and voice rules
 - The no-em-dash rule from msp-brand applies to every deliverable
+- Name and stamp every file per msp-brand section 4 (Document Versioning). Example:
+  `acme-dental-proposal-2026-11-01-v1.0.docx`. A revision is a new file with the next version.
 - Load msp-technical-writing for the prose form. Internal enablement is Zone 1 (flavored).
   Technical parts of customer-facing pieces are Zone 2 (see the siblings section above).
 

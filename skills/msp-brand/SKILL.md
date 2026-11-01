@@ -248,6 +248,114 @@ which person actually makes the buying decision.
 
 ---
 
+## 4. Document Versioning
+
+Claude often revises one document several times. Without a version system, the revisions share
+one name and people confuse them. This section gives every generated file a version in its file
+name and a matching stamp on the document. Every skill that produces a file follows it.
+
+### Scope
+
+The standard applies to every document Claude generates for {{COMPANY_NAME}}, internal or
+client-facing:
+
+- Office files and PDFs: .docx, .xlsx, .pptx, and .pdf
+- Markdown and text files: .md and .txt (for example, dossiers, runbooks, and plans)
+- Claude artifacts that are documents: Docs, Slides, and Sheets artifacts, and hand-built pages
+- Client-facing documents: proposals, quotes, contracts, QBR scorecards, and letters
+
+It does not apply to:
+
+- Text that Claude writes only in the chat (emails, social posts, and scripts to paste)
+- Files in a git repo, such as a client website's `COMPANY-INFO.md`, a skill file, or a master
+  template in the kit's `templates/` folder. Git keeps their versions. A document filled from a
+  template follows this standard.
+- A file whose name a system sets (for example, `index.html` or `SKILL.md`)
+- Artifacts that are working tools, not documents (for example, the msp-social review page)
+
+### File name
+
+Pattern: `<subject>-<doc-type>-<yyyy-mm-dd>-v<major>.<minor>.<ext>`
+
+| Part | Rule | Examples |
+|------|------|----------|
+| `<subject>` | The client or prospect, as a short slug. Use `{{COMPANY_SLUG}}` for internal documents about {{COMPANY_NAME}} itself. | `acme-dental`, `{{COMPANY_SLUG}}` |
+| `<doc-type>` | One to three words for the document type. If the document covers a period, add the period as a word. | `proposal`, `service-order`, `qbr-scorecard-q4`, `monthly-review-october` |
+| `<yyyy-mm-dd>` | The date of this revision (the day Claude generated the file), in {{TIMEZONE}}. It changes with each revision. | `2026-11-03` |
+| `v<major>.<minor>` | The version number. See Version Number below. | `v1.0`, `v1.1`, `v2.0` |
+
+- Use lowercase letters, numbers, hyphens, and the dot in the version only. No spaces and no
+  underscores.
+- Keep `<subject>` and `<doc-type>` the same for every revision of one document. Then all the
+  revisions sort together in a folder.
+- The revision date is the only numeric date in the name.
+
+The history of one proposal:
+
+```
+acme-dental-proposal-2026-11-01-v1.0.docx   first draft
+acme-dental-proposal-2026-11-01-v1.1.docx   typo and layout fixes
+acme-dental-proposal-2026-11-02-v1.2.docx   reworded the summary
+acme-dental-proposal-2026-11-05-v2.0.docx   v1.2 went to the client, then the price changed
+```
+
+Exception: msp-leadgen puts the type first (`prospects-springfield-2026-08-01-v1.0.xlsx` and
+`dossier-acme-dental-2026-08-01-v1.0.md`), so that all prospect lists sort together.
+
+### Version Number
+
+- A new document starts at v1.0.
+- Raise the major number (v1.3 to v2.0) if one or both of these conditions are true:
+  - The content changed: a price, scope, term, date, recommendation, or structure (a section
+    added or removed).
+  - The previous version went to someone outside {{COMPANY_NAME}} (a client, a prospect, or a
+    referral partner).
+- Otherwise, raise the minor number (v1.3 to v1.4). Minor changes are wording, typos,
+  formatting, and layout.
+- If the change is minor and you do not know whether the previous version was sent, ask the user.
+- After v1.9 comes v1.10, not v2.0.
+- Never reuse a number. Save each revision as a new file and leave the earlier files in place.
+
+### The Stamp
+
+- The stamp text is the exact file name without the extension. Example:
+  `acme-dental-proposal-2026-11-03-v1.1`.
+- Style: 8 pt, your muted text color from the palette table, in your body font (or the document
+  fallback). No label and no bold.
+- The stamp and the file name always match. When the name changes, change the stamp.
+- In Office files, also set the document Title property to the stamp text.
+
+| Format | Where the stamp goes |
+|--------|----------------------|
+| .docx | The footer of every page, left aligned, on its own line below any page number or contact line |
+| .pdf | The same place as in .docx. A PDF exported from a stamped .docx already has it. |
+| .pptx | A small text box at the bottom left of every slide, including the title slide |
+| .xlsx | The left section of the print footer on every sheet |
+| .md | The last line, after a blank line, in italics: `*dossier-acme-dental-2026-11-01-v1.0*` |
+| Published .md (for example, a resources article for {{DOMAIN}}) | The last line as an HTML comment, so that the stamp never shows on the site: `<!-- {{COMPANY_SLUG}}-article-phishing-2026-11-01-v1.0 -->` |
+| .txt | The last line, after a blank line, as plain text |
+| Artifact | Add the version to the end of the title ("Acme Dental Proposal v1.1"). Docs: put the stamp on the last line. Slides: bottom left of every slide. Sheets: a note below the data. |
+
+For an artifact, revise the same artifact. Its history keeps the earlier versions. Change the
+title and the stamp on every revision.
+
+### Before You Make a Revision
+
+1. Find the latest version. Look at the files in this conversation: the files you made and the
+   files the user attached.
+2. If you find it, read its version from the file name.
+3. If the file name and the stamp do not match, ask the user which one is correct.
+4. If you cannot find an earlier file (for example, in a new chat), ask the user to attach the
+   latest file or to tell you its version. Do not guess.
+5. Do not search folders or file sync services for the file unless the user points to a
+   location.
+6. Pick the next number with the Version Number rules.
+7. Save the revision as a new file with the new name and the new stamp.
+8. In your reply, give the new version and one line about what changed. Example: "v1.1: fixed
+   two typos and the table layout."
+
+---
+
 ## Quick Reference (paste-ready)
 
 - **Name:** {{COMPANY_NAME}} (legal: {{COMPANY_LEGAL_NAME}})
@@ -258,6 +366,8 @@ which person actually makes the buying decision.
 - **Fonts:** fill in your heading font, body font, and document fallback from the typography table
 - **Logo:** your full color lockup is the default; icons for small spaces; grayscale for single-color
 - **Voice:** Friendly expert. Plain English. Outcomes over specs. Empathy over fear.
+- **Files:** `<subject>-<doc-type>-<yyyy-mm-dd>-v1.0.<ext>`, a footer stamp that matches the file
+  name (8 pt, muted text color), and a new file for every revision (section 4).
 - **Prose form:** msp-technical-writing for everything except marketing and direct customer
   communication, and for steps or instructions inside those.
 - **Never:** jargon in client copy; fear-based selling; em dashes.

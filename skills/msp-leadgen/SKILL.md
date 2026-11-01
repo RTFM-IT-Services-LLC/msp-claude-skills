@@ -157,10 +157,13 @@ These protect both the quality of the list and {{COMPANY_NAME}}'s reputation:
 ## Output & File Handling
 
 - **Spreadsheet:** .xlsx via the xlsx skill, columns per `references/output-formats.md`.
-  Name it `prospects-<area>-<yyyy-mm-dd>.xlsx`.
-- **Dossiers:** one markdown file per business, named `dossier-<business-slug>.md`, template
+  Name it `prospects-<area>-<yyyy-mm-dd>-v<major>.<minor>.xlsx`.
+- **Dossiers:** one markdown file per business, named
+  `dossier-<business-slug>-<yyyy-mm-dd>-v<major>.<minor>.md`, template
   per `references/output-formats.md`. Keep each to roughly one page; the spreadsheet holds
   the breadth, the dossier holds the depth.
+- **Versions:** file names and stamps follow msp-brand section 4 (Document Versioning). A fresh
+  sweep is a new document at v1.0. A rework of an existing list or dossier is its next version.
 - **First-touch drafts:** included inside each dossier, clearly marked as a draft for the
   owner to review before anything is sent. This skill never sends outreach itself.
 - Save deliverables wherever the current environment delivers files to the user, and present

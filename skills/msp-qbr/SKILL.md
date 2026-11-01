@@ -115,6 +115,9 @@ to build.
 - **Internal:** log decisions, declined recommendations, and scope observations in your PSA
   (ticketing) system. Feed scope drift and health observations to msp-metrics; the QBR is where
   the fire-or-fix data gets collected in person.
+- **File names and versions:** the scorecard and any deck follow
+  msp-brand section 4 (Document Versioning). Example:
+  `acme-dental-qbr-scorecard-q4-2026-11-01-v1.0.docx`.
 - **Prose form:** internal prep notes are Zone 1 of msp-technical-writing (flavored mode). The
   client scorecard follows msp-brand. The description of what each fix involves is Zone 2.
 

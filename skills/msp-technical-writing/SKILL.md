@@ -195,6 +195,8 @@ Pick the mode from the text. Do not ask which mode to use.
 
 - Write only the requested text. No preamble, no summary of what you wrote, and no closing
   remarks.
+- When the text goes into a file, name and stamp the file per
+  msp-brand section 4 (Document Versioning).
 
 ---
 

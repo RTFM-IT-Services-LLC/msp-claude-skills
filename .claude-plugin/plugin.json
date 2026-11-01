@@ -1,5 +1,5 @@
 {
   "name": "msp-ops-kit",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "MSP Operations Kit: a complete Claude skill suite for a small managed IT services business. Guided setup, brand, technical writing, sales, marketing, social media operations, lead generation, pricing, legal, website setup, AI adoption, onboarding, offboarding, helpdesk, maintenance, client comms, QBR, metrics, and security. Run msp-setup before client-facing use."
 }

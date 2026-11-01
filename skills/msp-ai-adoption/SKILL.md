@@ -313,6 +313,8 @@ Follows msp-security. In plain language for the client:
   the next-wave list are internal and never go to the client.
 - Per msp-technical-writing, sales notes and the next-wave list are Zone 1 (flavored mode).
 - Use fictional names (Acme convention) in any example saved into the kit.
+- Every deliverable file follows msp-brand section 4 (Document Versioning). Example:
+  `acme-dental-ai-starter-plan-2026-11-01-v1.0.docx`.
 
 ---
 

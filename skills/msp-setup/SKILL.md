@@ -32,12 +32,12 @@ skills so the installed copies match the source folder.
 
 ## The canonical token list
 
-These are all twelve placeholder tokens used across the kit. This list is the single source of
+These are all thirteen placeholder tokens used across the kit. This list is the single source of
 truth for what to collect and propagate:
 
 {{COMPANY_NAME}}, {{COMPANY_LEGAL_NAME}}, {{TAGLINE}}, {{DOMAIN}}, {{INFO_EMAIL}},
 {{SUPPORT_EMAIL}}, {{SUPPORT_ALIAS_EMAIL}}, {{PHONE}}, {{STATE}}, {{SERVICE_AREA}},
-{{OWNER_NAME}}, {{TIMEZONE}}
+{{OWNER_NAME}}, {{TIMEZONE}}, {{COMPANY_SLUG}}
 
 Note: {{SUPPORT_EMAIL}}, {{SUPPORT_ALIAS_EMAIL}}, {{OWNER_NAME}}, and {{TIMEZONE}} do not appear
 in msp-brand itself; they live in the operational skills. Collect them in Phase 1 anyway.
@@ -82,10 +82,11 @@ per sitting is fine; never rush the user.
 
 Interview for the brand facts, then write them in.
 
-1. Ask for values for all twelve tokens: company name and legal name, tagline (offer to help
+1. Ask for values for all thirteen tokens: company name and legal name, tagline (offer to help
    write one), domain, general email, support email and any alias, phone, state or jurisdiction,
-   service area, owner name, and timezone (ask for the client-facing form they use, like
-   "Central Time").
+   service area, owner name, timezone (ask for the client-facing form they use, like
+   "Central Time"), and a company slug for file names (lowercase letters, numbers, and hyphens
+   only, for example `acme-it`; see msp-brand section 4).
 2. Fill in `msp-brand/SKILL.md` completely: the fill-in tables (colors, fonts, logos; help the
    user choose if they have no brand yet), voice examples, and the target-client description.
    Delete example rows once real values exist; if a section is deferred, keep its example rows

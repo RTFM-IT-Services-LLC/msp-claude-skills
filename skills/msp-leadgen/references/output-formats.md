@@ -8,7 +8,8 @@ did this client come from" back to a row.
 
 ## The Prospect Spreadsheet
 
-Filename: `prospects-<area>-<yyyy-mm-dd>.xlsx` (e.g., `prospects-springfield-2026-08-01.xlsx`).
+Filename: `prospects-<area>-<yyyy-mm-dd>-v<major>.<minor>.xlsx` (e.g.,
+`prospects-springfield-2026-08-01-v1.0.xlsx`). Version and stamp rules: msp-brand section 4.
 Build with the xlsx skill. One row per business, sorted by score descending. Freeze the
 header row; add a filter.
 
@@ -37,7 +38,8 @@ next sweep from re-researching them.
 
 ## The Dossier
 
-Filename: `dossier-<business-slug>.md`. One page. Written so the owner can read it in two
+Filename: `dossier-<business-slug>-<yyyy-mm-dd>-v<major>.<minor>.md` (e.g.,
+`dossier-acme-dental-2026-08-01-v1.0.md`). One page. Written so the owner can read it in two
 minutes before dialing. Use this exact structure:
 
 ```markdown
@@ -73,6 +75,8 @@ and msp-brand voice.
 
 ## Sources
 Bulleted list of every source used.
+
+*[file name without .md, per msp-brand section 4]*
 ```
 
 Keep the dossier honest about confidence. "The professional network shows no IT titles among
